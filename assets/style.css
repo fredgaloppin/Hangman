@@ -1,0 +1,61 @@
+body{
+	background-color: hsl(41, 83%, 82%);
+	text-align: center;
+}
+header{
+	background-image: url("background-2243639_1920.jpg");
+	opacity: 0.2;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;	
+}
+p{
+	font-family: Tahoma, sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	margin: 10px auto;
+	
+}
+
+input[type=button] {
+	background-color: orange;
+	border: none;
+	text-decoration: none;
+	/* padding: 20px 20px;
+	margin: 20px 20px; */
+	cursor: pointer;
+	border-radius: 50rem;
+	height: 23px;
+	
+ }
+ #displayWord{
+	cursor:no-drop;
+	width:350px;
+	font-size:18px;
+	border-radius: 15%;
+	background-color: hsl(41, 83%, 90%);
+	border: none;
+ }
+ #usedLetters{
+	cursor:no-drop;
+	width:135px;
+	font-size:18px;
+	border-radius: 15%;
+	background-color: hsl(41, 83%, 90%);
+	border: none;
+ }
+ #hangman{
+	 background-color: hsl(190, 76%, 87%);
+	 /* border-radius: 10%; */
+	 width: 240px;
+ }
+img{
+	
+	position: relative;
+	bottom: -5px;
+}
+ 
