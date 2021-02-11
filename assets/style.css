@@ -3,8 +3,8 @@ body{
 	text-align: center;
 }
 header{
-	background-image: url("background-2243639_1920.jpg");
-	opacity: 0.2;
+	background-image: url("image10.png");
+	/* opacity: 0.2; */
 	background-size: cover;
 	position: absolute;
 	top: 0px;
