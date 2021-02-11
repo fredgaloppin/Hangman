@@ -64,7 +64,7 @@ function selectLetter(l){
 	document.getElementById("attempts").innerHTML = 10-wrong_guesses+" wrong guesse(s) left";
 		if (wrong_guesses == 10){
 // lost
-			document.getElementById("message").innerHTML = "Poor lad, Far West is so unfair! Whatever the last one at the bar pay!";
+			document.getElementById("message").innerHTML = "Poor lad, Far West is so unfair! Whatever, the last one at the saloon buy a round of drinks.!";
 			document.getElementById("attempts").innerHTML = "";
 			document.getElementById("displayWord").innerHTML = to_guess;
 			can_play = false;
