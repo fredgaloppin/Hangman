@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+	<meta name="description" content="hangman for becode webdev training">
     <link rel="stylesheet" href="assets/style.css">
     <title>Hangman</title>
 	<script src="assets/script.js"></script>
@@ -15,16 +15,16 @@
 		
 			<form name="game">
 				<p>
-					<input id="displayWord" name="displayWord" disabled />
+					<input type="text" id="displayWord" name="displayWord" disabled />
 					<span type ="text" id="message"></span>
 					<br/>
 					<br/>
-					<input id="usedLetters" name="usedLetters" disabled />
+					<input type="text" id="usedLetters" name="usedLetters" disabled />
 					<span type ="text" id="attempts"></span>
 				</p>
 			</form>
 			<p id="hangman">
-					<img src="assets/hang0.png" width="100%" name="hm">
+					<img src="assets/hang0.png" alt="hangmanProcess" width="100%" name="hm">
 			</p>
 		
 		<p>
