@@ -13,11 +13,15 @@ header{
 	left: 0px;
 	z-index: -1;	
 }
+h1{
+	margin-bottom: 10px;
+}
 p{
 	font-family: Tahoma, sans-serif;
 	font-weight:bold;
 	font-size:20px;
 	margin: 10px auto;
+	max-width: 400px;
 	
 }
 
