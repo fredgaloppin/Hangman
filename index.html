@@ -9,58 +9,55 @@
 	<script src="assets/script.js"></script>
 </head>
 
-    <body onLoad="reset(); return true;">
+<body onLoad="reset(); return true;">
 	<header></header>
 	<h1>Far-west trip</h1>
     <main> 
-				<p id="displayWord"></p>
-				<p id="message"></p>	
-				<p id="usedLetters"></p>	
-				<p id="attempts"></p>
-			<p id="hangman">
-					<img src="assets/hang0.png" alt="hangmanProcess" width="100%" name="hm">
-			</p>
+		<div id="messages">	
+			<p id="displayWord"></p>
+			<p id="message"></p>	
+			<p id="usedLetters"></p>	
+			<p id="attempts"></p>
+		</div>
+		<p id="hangman">
+			<img src="assets/hang0.png" alt="hangmanProcess" width="100%" id="hm">
+		</p>
 		
 		<p>
-		 
-		<label>Choose a letter:</label>
-		<br/>
-		 
-		<a href="javascript:selectLetter('Q');"><input type="button" value="Q"></a>
-		<a href="javascript:selectLetter('W');"><input type="button" value="W"></a>
-		<a href="javascript:selectLetter('E');"><input type="button" value="E"></a>
-		<a href="javascript:selectLetter('R');"><input type="button" value="R"></a>
-		<a href="javascript:selectLetter('T');"><input type="button" value="T"></a>
-		<a href="javascript:selectLetter('Y');"><input type="button" value="Y"></a>
-		<a href="javascript:selectLetter('U');"><input type="button" value="U"></a>
-		<a href="javascript:selectLetter('I');"><input type="button" value="I"></a>
-		<a href="javascript:selectLetter('O');"><input type="button" value="O"></a>
-		<a href="javascript:selectLetter('P');"><input type="button" value="P"></a>
-		<br/>
-		<a href="javascript:selectLetter('A');"><input type="button" value="A"></a>
-		<a href="javascript:selectLetter('S');"><input type="button" value="S"></a>
-		<a href="javascript:selectLetter('D');"><input type="button" value="D"></a>
-		<a href="javascript:selectLetter('F');"><input type="button" value="F"></a>
-		<a href="javascript:selectLetter('G');"><input type="button" value="G"></a>
-		<a href="javascript:selectLetter('H');"><input type="button" value="H"></a>
-		<a href="javascript:selectLetter('J');"><input type="button" value="J"></a>
-		<a href="javascript:selectLetter('K');"><input type="button" value="K"></a>
-		<a href="javascript:selectLetter('L');"><input type="button" value="L"></a>
-		<br/>
-
-		<a href="javascript:selectLetter('Z');"><input type="button" value="Z"></a>
-		<a href="javascript:selectLetter('X');"><input type="button" value="X"></a>
-		<a href="javascript:selectLetter('C');"><input type="button" value="C"></a>
-		<a href="javascript:selectLetter('V');"><input type="button" value="V"></a>
-		<a href="javascript:selectLetter('B');"><input type="button" value="B"></a>
-		<a href="javascript:selectLetter('N');"><input type="button" value="N"></a>
-		<a href="javascript:selectLetter('M');"><input type="button" value="M"></a>
-		 
+			<label>Choose a letter:</label>
+			<br/>
+			<a href="javascript:selectLetter('Q');"><button type="button" id="Q">Q</button></a>
+			<a href="javascript:selectLetter('W');"><button type="button" id="W">W</button></a>
+			<a href="javascript:selectLetter('E');"><button type="button" id="E">E</button></a>
+			<a href="javascript:selectLetter('R');"><button type="button" id="R">R</button></a>
+			<a href="javascript:selectLetter('T');"><button type="button" id="T">T</button></a>
+			<a href="javascript:selectLetter('Y');"><button type="button" id="Y">Y</button></a>
+			<a href="javascript:selectLetter('U');"><button type="button" id="U">U</button></a>
+			<a href="javascript:selectLetter('I');"><button type="button" id="I">I</button></a>
+			<a href="javascript:selectLetter('O');"><button type="button" id="O">O</button></a>
+			<a href="javascript:selectLetter('P');"><button type="button" id="P">P</button></a>
+			<br/>
+			<a href="javascript:selectLetter('A');"><button type="button" id="A">A</button></a>
+			<a href="javascript:selectLetter('S');"><button type="button" id="S">S</button></a>
+			<a href="javascript:selectLetter('D');"><button type="button" id="D">D</button></a>
+			<a href="javascript:selectLetter('F');"><button type="button" id="F">F</button></a>
+			<a href="javascript:selectLetter('G');"><button type="button" id="G">G</button></a>
+			<a href="javascript:selectLetter('H');"><button type="button" id="H">H</button></a>
+			<a href="javascript:selectLetter('J');"><button type="button" id="J">J</button></a>
+			<a href="javascript:selectLetter('K');"><button type="button" id="K">K</button></a>
+			<a href="javascript:selectLetter('L');"><button type="button" id="L">L</button></a>
+			<br/>
+			<a href="javascript:selectLetter('Z');"><button type="button" id="Z">Z</button></a>
+			<a href="javascript:selectLetter('X');"><button type="button" id="X">X</button></a>
+			<a href="javascript:selectLetter('C');"><button type="button" id="C">C</button></a>
+			<a href="javascript:selectLetter('V');"><button type="button" id="V">V</button></a>
+			<a href="javascript:selectLetter('B');"><button type="button" id="B">B</button></a>
+			<a href="javascript:selectLetter('N');"><button type="button" id="N">N</button></a>
+			<a href="javascript:selectLetter('M');"><button type="button" id="M">M</button></a>
 		</p>
-		 
 		<p>
-		<a href="javascript:reset()"><input type="button" value="Reset game"></a>
+			<a href="javascript:reset()"><button type="button" id="Reset game">Re-Start Game</button></a>
 		</p>
 	</main>
 		
-		</body>
+</body>
