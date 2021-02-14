@@ -66,7 +66,12 @@ function selectLetter(l){
 function reset(){
 	document.getElementById("message").innerHTML = "";
 	document.getElementById("attempts").innerHTML = "";
-	document.getElementById(l).style.opacity = 1;
+	let arr = document.getElementsByTagName("button");
+	for (let index = 0; index < arr.length; index++) {
+		const element = arr[index];
+		element.style.opacity = 1
+	}
+	
 	selectWord();
 	used_letters = "";
 	document.getElementById("usedLetters").innerHTML = used_letters;
