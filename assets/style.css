@@ -16,6 +16,9 @@ header{
 h1{
 	margin: 10px 0px;
 }
+#messages{
+	height: 135px;
+}
 p{
 	font-family: Tahoma, sans-serif;
 	font-weight:bold;
@@ -25,7 +28,7 @@ p{
 	
 }
 
-input[type=button] {
+button{
 	background-color: orange;
 	border: none;
 	text-decoration: none;
@@ -58,8 +61,7 @@ input[type=button] {
 	 width: 240px;
  }
 img{
-	
 	position: relative;
 	bottom: -5px;
 }
- 
+
