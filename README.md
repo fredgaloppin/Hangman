@@ -1,6 +1,8 @@
 # Hangman
 Hangman game
 
+https://fredgaloppin.github.io/Hangman/
+
 At the very least your version of the hangman should:
 
     propose an hidden word
