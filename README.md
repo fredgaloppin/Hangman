@@ -1,9 +1,9 @@
 # Hangman
 [Hangman game](https://fredgaloppin.github.io/Hangman/)    
 
-Challenge: solo
-Duration : 3 days
-Deadline : 12/02/2021, 10:00 am
+-  Challenge: solo       
+-  Duration : 3 days     
+-  Deadline : 12/02/2021, 10:00 am    
 
 
 At the very least your version of the hangman should:
