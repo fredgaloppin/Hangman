@@ -1,8 +1,8 @@
 
 let can_play = true;
-let words = new Array("WOOD", "TIMBER", "MACHINE", "MOBILE", "MERGE",
- "CODES");
 
+// const words = new Array("WOOD", "TIMBER", "MACHINE", "MOBILE", "MERGE",
+//  "CODES");
 let to_guess = "";
 let display_word = "";
 let used_letters = "";
@@ -14,17 +14,17 @@ function selectLetter(l){
 	if (can_play == false){
 		return;
 	}
-	if (used_letters.indexOf(l) != -1){
+	let letter = l.toLowerCase();
+	if (used_letters.indexOf(letter) != -1){
 		return;
 	}
 	document.getElementById(l).style.opacity = 0.5;
-	if (to_guess.indexOf(l) != -1){
+	if (to_guess.indexOf(letter) != -1){
  // ---correct letter guess -----------------//
-		pos = 0;
+		let pos = 0;
 		temp_mask = display_word;
- 
-		while (to_guess.indexOf(l, pos) != -1){
-			pos = to_guess.indexOf(l, pos);			
+		while (to_guess.indexOf(letter, pos) != -1){
+			pos = to_guess.indexOf(letter, pos);			
 			end = pos + 1;
 			
 			start_text = temp_mask.substring(0, pos);
@@ -44,11 +44,12 @@ function selectLetter(l){
 			if (wrong_guesses == 0) {
 				document.getElementById("attempts").innerHTML = "A perfect, let's party! ";
 			}
+			document.getElementById("hm").src = "assets/won.png";
 		can_play = false;
 		}
 	} else {
 // -------incorrect letter guess----//
-	used_letters += l;
+	used_letters += letter;
 	document.getElementById("usedLetters").innerHTML = used_letters;
 	wrong_guesses += 1;
 	document.getElementById("hm").src = "assets/hang" + wrong_guesses + ".png";
@@ -79,16 +80,16 @@ function reset(){
 	document.getElementById("hm").src="assets/hang0.png";
 } 
 //-----random word + call createMask + display mask---//
-function selectWord()
-{
-can_play = true;
+function selectWord() {
+	can_play = true;
 
-random_number = Math.round(Math.random() * (words.length - 1));
-to_guess = words[random_number];
-// -----------display masked word-----------------------------//
-masked_word = createMask(to_guess);
-document.getElementById("displayWord").innerHTML = masked_word;
-display_word = masked_word;
+	random_number = Math.round(Math.random() * (words.length - 1));
+	to_guess = words[random_number];
+	console.log(to_guess);
+	// -----------display masked word-----------------------------//
+	masked_word = createMask(to_guess);
+	document.getElementById("displayWord").innerHTML = masked_word;
+	display_word = masked_word;
 }
  // --- funtcion createMask------//
 function createMask(m){
