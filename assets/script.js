@@ -12,14 +12,14 @@ let wrong_guesses = 0;
 //---function on event -------//
 function selectLetter(l){
 	if (can_play == false){
-		return;
+		alert('re-start a New game');
 	}
 	let letter = l.toLowerCase();
 	if (used_letters.indexOf(letter) != -1){
 		return;
 	}
 	document.getElementById(l).style.opacity = 0.5;
-	if (to_guess.indexOf(letter) != -1){
+	if (to_guess.indexOf(letter) !== -1){
  // ---correct letter guess -----------------//
 		let pos = 0;
 		temp_mask = display_word;
@@ -44,7 +44,7 @@ function selectLetter(l){
 			if (wrong_guesses == 0) {
 				document.getElementById("attempts").innerHTML = "A perfect, let's party! ";
 			}
-			document.getElementById("hm").src = "assets/won.png";
+			document.getElementById("hm").src = "assets/won.webp";
 		can_play = false;
 		}
 	} else {
@@ -52,6 +52,7 @@ function selectLetter(l){
 	used_letters += letter;
 	document.getElementById("usedLetters").innerHTML = used_letters;
 	wrong_guesses += 1;
+
 	document.getElementById("hm").src = "assets/hang" + wrong_guesses + ".png";
 	document.getElementById("attempts").innerHTML = 10-wrong_guesses+" wrong guesse(s) left";
 		if (wrong_guesses == 10){
@@ -72,6 +73,7 @@ function reset(){
 		const element = arr[index];
 		element.style.opacity = 1
 	}
+	
 	
 	selectWord();
 	used_letters = "";
@@ -116,5 +118,7 @@ function displayLetters (){
 		addLetter.append(addButton);
 		let myAlphabetSection = document.getElementById('alphabet');
 	
-		myAlphabetSection.append(addLetter);	
+		myAlphabetSection.append(addLetter);
+		
 	});
+}
