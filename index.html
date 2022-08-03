@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="hangman for becode webdev training">
-    <link rel="stylesheet" href="assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hangman for becode webdev training" />
     <title>Hangman</title>
-	<script type="text/javascript" src="assets/EnglishWords.js"></script>
-	<script src="assets/script.js"></script>
-</head>
+    <meta http-equiv="Cache-control" content="max-age:180" />
+    <script type="text/javascript" src="assets/EnglishWords.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
 
-<body onLoad="reset(); return true;">
-	<header></header>
-	<h1>Far-west trip</h1>
-    <main> 
-		<div id="messages">	
-			<p id="displayWord"></p>
-			<p id="message"></p>	
-			<p id="usedLetters"></p>	
-			<p id="attempts"></p>
-		</div>
-		<p id="hangman">
-			<img src="assets/hang0.png" alt="hangmanProcess" width="100%" id="hm">
-		</p>
-		
-		<p>
-			<label>Choose a letter:</label>
-			<br/>
-			<a href="javascript:selectLetter('Q');"><button type="button" id="Q">Q</button></a>
-			<a href="javascript:selectLetter('W');"><button type="button" id="W">W</button></a>
-			<a href="javascript:selectLetter('E');"><button type="button" id="E">E</button></a>
-			<a href="javascript:selectLetter('R');"><button type="button" id="R">R</button></a>
-			<a href="javascript:selectLetter('T');"><button type="button" id="T">T</button></a>
-			<a href="javascript:selectLetter('Y');"><button type="button" id="Y">Y</button></a>
-			<a href="javascript:selectLetter('U');"><button type="button" id="U">U</button></a>
-			<a href="javascript:selectLetter('I');"><button type="button" id="I">I</button></a>
-			<a href="javascript:selectLetter('O');"><button type="button" id="O">O</button></a>
-			<a href="javascript:selectLetter('P');"><button type="button" id="P">P</button></a>
-			<br/>
-			<a href="javascript:selectLetter('A');"><button type="button" id="A">A</button></a>
-			<a href="javascript:selectLetter('S');"><button type="button" id="S">S</button></a>
-			<a href="javascript:selectLetter('D');"><button type="button" id="D">D</button></a>
-			<a href="javascript:selectLetter('F');"><button type="button" id="F">F</button></a>
-			<a href="javascript:selectLetter('G');"><button type="button" id="G">G</button></a>
-			<a href="javascript:selectLetter('H');"><button type="button" id="H">H</button></a>
-			<a href="javascript:selectLetter('J');"><button type="button" id="J">J</button></a>
-			<a href="javascript:selectLetter('K');"><button type="button" id="K">K</button></a>
-			<a href="javascript:selectLetter('L');"><button type="button" id="L">L</button></a>
-			<br/>
-			<a href="javascript:selectLetter('Z');"><button type="button" id="Z">Z</button></a>
-			<a href="javascript:selectLetter('X');"><button type="button" id="X">X</button></a>
-			<a href="javascript:selectLetter('C');"><button type="button" id="C">C</button></a>
-			<a href="javascript:selectLetter('V');"><button type="button" id="V">V</button></a>
-			<a href="javascript:selectLetter('B');"><button type="button" id="B">B</button></a>
-			<a href="javascript:selectLetter('N');"><button type="button" id="N">N</button></a>
-			<a href="javascript:selectLetter('M');"><button type="button" id="M">M</button></a>
-		</p>
-		<p>
-			<a href="javascript:reset()"><button type="button" id="Reset game">Re-Start Game</button></a>
-		</p>
-	</main>
-		
-</body>
+  <body
+    onLoad="reset(); displayLetters (); return true;"
+    class="flex flex col justify-center h-screen text-center"
+  >
+    <div class="max-w-sm text-center">
+      <h1 class="text-5xl font-bold mt-0 mb-6">Far-west trip</h1>
+      <main>
+        <section class="text-lg messages mb-1">
+          <p id="displayWord"></p>
+          <p id="message"></p>
+          <p id="usedLetters"></p>
+          <p id="attempts"></p>
+        </section>
+        <section id="hangman" class="">
+          <img
+            class="max-h-80 m-auto"
+            src="assets/hang0.png"
+            alt="hangmanProcess"
+            width=""
+            height=""
+            id="hm"
+          />
+        </section>
+
+        <h4 class="font-medium leading-tight text-2xl mt-1 text-blue-900 mb-1">
+          Choose a letter:
+        </h4>
+        <section id="alphabet"></section>
+        <p>
+          <a href="javascript:reset()">
+            <button
+              type="button"
+              class="px-4 py-1.5 bg-yellow-500 rounded-full border mt-1"
+              id="Reset game"
+            >
+              Re-Start Game
+            </button></a
+          >
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
