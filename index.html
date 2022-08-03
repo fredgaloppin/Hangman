@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="hangman for becode webdev training" />
     <title>Hangman</title>
-    <meta http-equiv="Cache-control" content="max-age:180" />
+    <meta http-equiv="Cache-control" content="max-age:1800" />
     <script type="text/javascript" src="assets/EnglishWords.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/script.js"></script>
@@ -13,7 +13,7 @@
   </head>
 
   <body
-    onLoad="reset(); displayLetters (); return true;"
+    onLoad="displayLetters(); reset(); return true"
     class="flex flex col justify-center h-screen text-center"
   >
     <div class="max-w-sm text-center">
@@ -22,7 +22,7 @@
         <section class="text-lg messages mb-1">
           <p id="displayWord"></p>
           <p id="message"></p>
-          <p id="usedLetters"></p>
+          <p id="usedLetters" class="text-red-500 line-through"></p>
           <p id="attempts"></p>
         </section>
         <section id="hangman" class="">
@@ -41,8 +41,8 @@
         </h4>
         <section id="alphabet"></section>
         <p>
-          <a href="javascript:reset()">
-            <button
+          <a href="javascript:reset()"
+            ><button
               type="button"
               class="px-4 py-1.5 bg-yellow-500 rounded-full border mt-1"
               id="Reset game"
