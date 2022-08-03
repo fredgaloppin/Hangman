@@ -1,68 +1,36 @@
 body{
 	background-color: hsl(41, 83%, 82%);
-	text-align: center;
-}
-header{
-	background-image: url("image10.png");
+	background-image: url("image10.avif");
 	/* opacity: 0.2; */
 	background-size: cover;
 	position: absolute;
-	top: 0px;
 	right: 0px;
-	bottom: 0px;
 	left: 0px;
-	z-index: -1;	
-}
-h1{
-	margin: 10px 0px;
-}
-#messages{
-	height: 135px;
+	font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 p{
 	font-family: Tahoma, sans-serif;
 	font-weight:bold;
-	font-size:20px;
-	margin: 10px auto;
-	max-width: 400px;
-	
+}
+.messages{
+	height: 135px;
 }
 
-button{
-	background-color: orange;
-	border: none;
-	text-decoration: none;
-	/* padding: 20px 20px;*/
-	margin: 0px 2px; 
-	cursor: pointer;
-	border-radius: 50rem;
-	height: 23px;
-	opacity: 1;
-	
- }
  #displayWord{
 	cursor:no-drop;
-	width:350px;
-	font-size:18px;
 	border-radius: 15%;
 	background-color: hsl(41, 83%, 90%);
 	border: none;
  }
  #usedLetters{
+	width: 135px;
 	cursor:no-drop;
-	width:135px;
-	font-size:18px;
 	border-radius: 15%;
 	background-color: hsl(41, 83%, 90%);
 	border: none;
  }
- #hangman{
+ .max-h-80{
 	 background-color: hsl(190, 76%, 87%);
 	 /* border-radius: 10%; */
-	 width: 240px;
  }
-img{
-	position: relative;
-	bottom: -5px;
-}
 
